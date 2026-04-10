@@ -2,16 +2,16 @@
    Variables & Reset
    ========================================================================== */
 :root {
-  --azure: #0078d4;
-  --azure-dark: #005a9e;
-  --azure-light: #e6f2fb;
+  --azure: #000000;
+  --azure-dark: #111111;
+  --azure-light: #f0f0f0;
   --text: #1f1f1f;
   --text-muted: #555;
   --bg: #ffffff;
-  --bg-alt: #f5f9fd;
-  --border: #d0e4f5;
+  --bg-alt: #f5f5f5;
+  --border: #d0d0d0;
   --radius: 8px;
-  --shadow: 0 2px 12px rgba(0, 120, 212, 0.1);
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
   --transition: 0.25s ease;
   --max-width: 860px;
 }
@@ -228,7 +228,7 @@ nav {
   box-shadow: var(--shadow);
   transition: box-shadow var(--transition);
 }
-.timeline-item:hover { box-shadow: 0 4px 20px rgba(0,120,212,0.18); }
+.timeline-item:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
 
 .timeline-date {
   font-size: 0.8rem;
@@ -266,7 +266,7 @@ nav {
   transition: box-shadow var(--transition), transform var(--transition);
 }
 .cert-card:hover {
-  box-shadow: 0 4px 20px rgba(0,120,212,0.18);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
   transform: translateY(-2px);
 }
 .cert-date {
@@ -329,6 +329,7 @@ nav {
   font-style: italic;
   line-height: 1.6;
   opacity: 0.95;
+  color: var(--azure);
 }
 .quote-section blockquote::before { content: '\201C'; }
 .quote-section blockquote::after  { content: '\201D'; }
@@ -360,7 +361,7 @@ footer {
   font-size: 1.2rem;
   transition: color var(--transition);
 }
-.footer-social a:hover { color: var(--azure); }
+.footer-social a:hover { color: #fff; }
 
 /* ==========================================================================
    Responsive
