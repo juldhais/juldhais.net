@@ -472,7 +472,11 @@ a.cert:hover::after { color: var(--accent); transform: translate(2px, -2px); }
   font-weight: 600;
   letter-spacing: -0.035em;
   line-height: 1.2;
+  /* Hidden easter egg: only visible when the text is highlighted */
+  color: transparent;
+  cursor: text;
 }
+.quote blockquote::selection { color: #fff; background: rgba(124, 124, 255, 0.45); }
 .quote-mark {
   display: block;
   font-size: 5rem;
