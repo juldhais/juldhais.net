@@ -4,310 +4,366 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="Juldhais Hengkyawan" />
-  <meta name="description" content="Personal landing page of Juldhais Hengkyawan – Software Engineer, .NET C# Programmer, Full-Stack Developer." />
+  <meta name="description" content="Juldhais Hengkyawan – Technical Lead and IT Consultant building .NET, cloud and full-stack software for healthcare, manufacturing and finance." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Juldhais Hengkyawan – Technical Lead & IT Consultant" />
+  <meta property="og:description" content="Building reliable .NET, cloud and full-stack software for healthcare, manufacturing and finance." />
+  <meta property="og:url" content="https://juldhais.net" />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/25476279?v=4" />
   <title>Juldhais Hengkyawan</title>
-  <link rel="shortcut icon" href="img/favicon.png" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c7cff'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%230a0a0a'/%3E%3Cpath d='M38 16v22a10 10 0 0 1-20 0' fill='none' stroke='url(%23g)' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 </head>
 <body>
 
   <!-- Navigation -->
-  <nav>
+  <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="#about" class="nav-brand">&gt; juldhais.net</a>
+      <a href="#top" class="nav-brand" aria-label="Home">
+        <span class="brand-mark">J</span><span class="brand-text">juldhais</span>
+      </a>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#experiences">Experience</a></li>
-        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certs</a></li>
         <li><a href="#projects">Projects</a></li>
       </ul>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
+      <a class="nav-cta" href="mailto:juldhais@gmail.com">Contact</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- Hero / Intro -->
-  <header class="hero" id="about">
-    <div class="hero-inner">
-      <p class="hero-greeting">Hello, world!</p>
-      <img class="hero-avatar" src="https://avatars.githubusercontent.com/u/25476279?v=4" alt="Juldhais Hengkyawan"
-           onerror="this.style.display='none';document.getElementById('hero-avatar-fallback').style.display='flex';" />
-      <div class="hero-avatar-placeholder" id="hero-avatar-fallback" style="display:none;">
-        <i class="fas fa-user"></i>
-      </div>
-      <h1 class="hero-name">JULDHAIS HENGKYAWAN</h1>
-      <div class="hero-typed-wrapper">
-        <span id="typed-text"></span>
-      </div>
-      <ul class="hero-contacts">
-        <li><i class="fas fa-home"></i> Bogor, Indonesia</li>
-        <li><i class="fas fa-envelope"></i>
-          <a href="mailto:juldhais@gmail.com">juldhais@gmail.com</a></li>
-        <li><i class="fas fa-globe"></i>
-          <a href="https://juldhais.net">juldhais.net</a></li>
-      </ul>
+  <!-- Hero -->
+  <header class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-grid" data-speed="0.25"></div>
+      <div class="orb orb-a" data-speed="0.45" data-drift="14"></div>
+      <div class="orb orb-b" data-speed="0.65" data-drift="-18"></div>
+      <div class="orb orb-c" data-speed="0.35" data-drift="10"></div>
     </div>
+
+    <div class="hero-inner" data-speed="-0.12" data-hero-content>
+      <div class="hero-badge reveal">
+        <span class="pulse"></span> Technical Lead · IT Consultant
+      </div>
+      <img class="hero-avatar reveal" src="https://avatars.githubusercontent.com/u/25476279?v=4" alt="Juldhais Hengkyawan" width="96" height="96"
+           onerror="this.style.display='none'" />
+      <h1 class="hero-name reveal">Juldhais<br /><span class="gradient-text">Hengkyawan</span></h1>
+      <p class="hero-lead reveal">
+        I design and build reliable software with .NET, cloud and modern web tech, turning
+        complex business processes into products that just work.
+      </p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="mailto:juldhais@gmail.com">
+          Get in touch <i class="fas fa-arrow-right"></i>
+        </a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/juldhais" target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a class="btn btn-icon" href="https://github.com/juldhais" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+      <p class="hero-meta reveal"><i class="fas fa-location-dot"></i> Bogor, Indonesia · Working with teams in Australia</p>
+    </div>
+
+    <a class="scroll-hint" href="#about" aria-label="Scroll to about">
+      <span></span>
+    </a>
   </header>
 
-  <!-- Experiences -->
-  <section class="section" id="experiences">
-    <div class="container">
-      <h2 class="section-title">Experiences</h2>
-      <ul class="timeline-list">
-        <li class="timeline-item">
-          <div class="timeline-date">2022 – Now</div>
-          <div class="timeline-title">
-            <a href="https://www.xtramilesolutions.com.au/" target="_blank">Xtramile Solutions, Pty. Ltd.</a>
-          </div>
-          <div class="timeline-sub">Technical Lead</div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">2020 – 2022</div>
-          <div class="timeline-title">
-            <a href="https://ebtid.com/" target="_blank">El Barco del Tesoro, Co. Ltd.</a>
-          </div>
-          <div class="timeline-sub">Senior Consultant</div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">2019 – 2020</div>
-          <div class="timeline-title">
-            <a href="https://www.isid.co.id/" target="_blank">PT. ISID Indonesia</a>
-          </div>
-          <div class="timeline-sub">Senior Consultant</div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">2017 – 2019</div>
-          <div class="timeline-title">
-            <a href="https://ids.co.id/" target="_blank">PT. IDS Indonesia</a>
-          </div>
-          <div class="timeline-sub">System Analyst</div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">2013 – 2017</div>
-          <div class="timeline-title">PT. Buana Inovasi Teknologi</div>
-          <div class="timeline-sub">C# Developer</div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Certifications -->
-  <section class="section" id="certifications">
-    <div class="container">
-      <h2 class="section-title">Certifications</h2>
-      <div class="cert-grid">
-        <div class="cert-card">
-          <div class="cert-date">December 2024</div>
-          <div class="cert-name">
-            <a href="https://courses.code-maze.com/tutor-certificate?cert_hash=4c623e4786ec9870" target="_blank">
-              Microservices in .NET
-            </a>
-          </div>
-          <div class="cert-issuer">Code Maze</div>
+  <main>
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num" data-speed="0.12" aria-hidden="true">01</span>
+          <p class="eyebrow">About</p>
+          <h2 class="section-title">Engineering that ships,<br /><span class="muted">and keeps running.</span></h2>
         </div>
-        <div class="cert-card">
-          <div class="cert-date">September 2024</div>
-          <div class="cert-name">
-            <a href="https://www.coursera.org/account/accomplishments/specialization/43ZFQZ2WVODU" target="_blank">
-              Generative AI for Software Developers Specialization
-            </a>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a software engineer, technical lead and IT consultant with more than a decade of
+              experience delivering business-critical systems: from healthcare platforms in Sydney to
+              manufacturing, supply chain and banking applications across Indonesia and Singapore.
+            </p>
+            <p>
+              I work across the full lifecycle, from analysis and architecture to hands-on development
+              and leading teams, mostly with C#, ASP.NET Core, Blazor, React, SQL and Azure.
+            </p>
           </div>
-          <div class="cert-issuer">IBM</div>
-        </div>
-        <div class="cert-card">
-          <div class="cert-date">September 2024</div>
-          <div class="cert-name">
-            <a href="https://www.credly.com/badges/6ac0d0d0-baa1-4755-b579-ed54ac14e16d/public_url" target="_blank">
-              Google AI Essentials
-            </a>
+          <div class="stats">
+            <div class="stat card reveal"><div class="stat-value"><span data-years-since="2013">13</span>+</div><div class="stat-label">Years experience</div></div>
+            <div class="stat card reveal"><div class="stat-value">14</div><div class="stat-label">Projects delivered</div></div>
+            <div class="stat card reveal"><div class="stat-value">3</div><div class="stat-label">Countries served</div></div>
+            <div class="stat card reveal"><div class="stat-value">10</div><div class="stat-label">Certifications</div></div>
           </div>
-          <div class="cert-issuer">Google</div>
-        </div>
-        <div class="cert-card">
-          <div class="cert-date">September 2023</div>
-          <div class="cert-name">
-            <a href="https://www.freecodecamp.org/certification/fcc44e2bfdf-3956-41ff-b774-78187758cd0d/foundational-c-sharp-with-microsoft" target="_blank">
-              Foundational C# with Microsoft
-            </a>
-          </div>
-          <div class="cert-issuer">Microsoft</div>
-        </div>
-        <div class="cert-card">
-          <div class="cert-date">September 2023</div>
-          <div class="cert-name">
-            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/MR4MR8C7ST5Q" target="_blank">
-              Meta Front-End Developer Specialization
-            </a>
-          </div>
-          <div class="cert-issuer">Meta</div>
-        </div>
-        <div class="cert-card">
-          <div class="cert-date">August 2022</div>
-          <div class="cert-name">
-            <a href="https://www.credly.com/badges/d6ea7696-6357-4855-ae43-12060cae3498" target="_blank">
-              Microsoft Certified – Azure Fundamentals
-            </a>
-          </div>
-          <div class="cert-issuer">Microsoft</div>
-        </div>
-        <div class="cert-card">
-          <div class="cert-date">September 2021</div>
-          <div class="cert-name">
-            <a href="https://www.credly.com/badges/3e37ad19-6185-4692-b198-3306534fc8c8" target="_blank">
-              PCAP – Certified Associate in Python Programming
-            </a>
-          </div>
-          <div class="cert-issuer">Python Institute</div>
-        </div>
-        <div class="cert-card">
-          <div class="cert-date">July 2021</div>
-          <div class="cert-name">
-            <a href="https://coursera.org/verify/professional-cert/LTA2C7KKJWP9" target="_blank">
-              Google Data Analytics
-            </a>
-          </div>
-          <div class="cert-issuer">Google</div>
-        </div>
-        <div class="cert-card">
-          <div class="cert-date">May 2019</div>
-          <div class="cert-name">
-            <a href="https://www.credly.com/badges/fe71f9d2-e9fb-4187-8905-a680a54fb3e3" target="_blank">
-              Programming in C#
-            </a>
-          </div>
-          <div class="cert-issuer">Microsoft</div>
-        </div>
-        <div class="cert-card">
-          <div class="cert-date">May 2010</div>
-          <div class="cert-name">C# Fundamental</div>
-          <div class="cert-issuer">Indonesia .NET Developer Community</div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Skills -->
-  <section class="section" id="skills">
-    <div class="container">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-category">Languages</div>
-          <div class="skill-items">C# / SQL / Javascript</div>
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num" data-speed="0.12" aria-hidden="true">02</span>
+          <p class="eyebrow">Experience</p>
+          <h2 class="section-title">Where I've worked</h2>
         </div>
-        <div class="skill-card">
-          <div class="skill-category">Frameworks</div>
-          <div class="skill-items">ASP.NET Core / Blazor / React</div>
+        <ol class="timeline">
+          <li class="tl-item is-current reveal">
+            <div class="tl-date">2022 — Now</div>
+            <div class="tl-body card">
+              <h3><a href="https://www.xtramilesolutions.com.au/" target="_blank" rel="noopener">Xtramile Solutions, Pty. Ltd. <i class="fas fa-arrow-up-right-from-square"></i></a></h3>
+              <p>Technical Lead</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <div class="tl-date">2020 — 2022</div>
+            <div class="tl-body card">
+              <h3><a href="https://ebtid.com/" target="_blank" rel="noopener">El Barco del Tesoro, Co. Ltd. <i class="fas fa-arrow-up-right-from-square"></i></a></h3>
+              <p>Senior Consultant</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <div class="tl-date">2019 — 2020</div>
+            <div class="tl-body card">
+              <h3><a href="https://www.isid.co.id/" target="_blank" rel="noopener">PT. ISID Indonesia <i class="fas fa-arrow-up-right-from-square"></i></a></h3>
+              <p>Senior Consultant</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <div class="tl-date">2017 — 2019</div>
+            <div class="tl-body card">
+              <h3><a href="https://ids.co.id/" target="_blank" rel="noopener">PT. IDS Indonesia <i class="fas fa-arrow-up-right-from-square"></i></a></h3>
+              <p>System Analyst</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <div class="tl-date">2013 — 2017</div>
+            <div class="tl-body card">
+              <h3>PT. Buana Inovasi Teknologi</h3>
+              <p>C# Developer</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num" data-speed="0.12" aria-hidden="true">03</span>
+          <p class="eyebrow">Skills</p>
+          <h2 class="section-title">Tools of the trade</h2>
         </div>
-        <div class="skill-card">
-          <div class="skill-category">Databases</div>
-          <div class="skill-items">SQL Server / PostgreSQL</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-category">Tools</div>
-          <div class="skill-items">Azure / Visual Studio</div>
+        <div class="skills-grid">
+          <div class="skill card reveal">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
+            <h3>Languages</h3>
+            <ul class="chips"><li>C#</li><li>SQL</li><li>JavaScript</li></ul>
+          </div>
+          <div class="skill card reveal">
+            <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+            <h3>Frameworks</h3>
+            <ul class="chips"><li>ASP.NET Core</li><li>Blazor</li><li>React</li></ul>
+          </div>
+          <div class="skill card reveal">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+            <h3>Databases</h3>
+            <ul class="chips"><li>SQL Server</li><li>PostgreSQL</li></ul>
+          </div>
+          <div class="skill card reveal">
+            <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+            <h3>Tools</h3>
+            <ul class="chips"><li>Azure</li><li>Visual Studio</li></ul>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects -->
-  <section class="section" id="projects">
-    <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <ul class="timeline-list">
-        <li class="timeline-item">
-          <div class="timeline-date">2023 – Now</div>
-          <div class="timeline-title">CRM – Private Health Insurance</div>
-          <div class="timeline-sub">Develop a Customer Relationship Management application for a private health insurance company in Australia. (Sydney)</div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">2022 – 2023</div>
-          <div class="timeline-title">Evercare</div>
-          <div class="timeline-sub">Develop an integrated healthcare application used by healthcare providers in Australia. (Sydney)</div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">2019 – 2022</div>
-          <div class="timeline-title">SHIVA – Fujita</div>
-          <div class="timeline-sub">Analyze, design, develop, and implement a web application for PT. Fujita Indonesia — motorcycle parts manufacturing company; to manage the supply chain, calculate labor and equipment effectiveness, find abnormalities in production activities, and analyze sales and financial transactions. (Karawang)</div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">2021</div>
-          <div class="timeline-title">Vendor Portal Application</div>
-          <div class="timeline-sub">Analyze, design, and develop web application to manage purchase orders and delivery processes, used by the suppliers of PT. Fujita Indonesia. (Karawang)</div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">2021</div>
-          <div class="timeline-title">Epitome</div>
-          <div class="timeline-sub">Create SQL and Python scripts for data cleansing and analyzing; prepare and process ETL data using SSIS; and use the results as a data source in the Power BI dashboard. This project belongs to a company named Epitome Analytics Pte. Ltd. (Singapore)</div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">2020</div>
-          <div class="timeline-title">UNICA – Your Clinic Application</div>
-          <div class="timeline-sub">Analyze, design, and develop Web and Desktop Application to manage medical health records, inventories, sales, and financial transactions for an aesthetic clinic named Youth and Beauty. (Jakarta)</div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">2019 – 2020</div>
-          <div class="timeline-title">Import Tracking Inventory</div>
-          <div class="timeline-sub">Analyze, design, and develop a web application for Hino Motor Manufacturing that manages the process of import and export goods, integrated with Customs/Bea Cukai. (Karawang)</div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">2019</div>
-          <div class="timeline-title">SIAPIK Web</div>
-          <div class="timeline-sub">Analyze, design, and develop a web application for Bank Indonesia that helps small-medium businesses in Indonesia to record their business transaction. (Jakarta)</div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">2018 – 2019</div>
-          <div class="timeline-title">Performance Management System – Hyto</div>
-          <div class="timeline-sub">Analyze, design, and develop a performance management system for the Human Resource department of PT. Berlian Sistem Informasi. (Jakarta)</div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">2017 – 2018</div>
-          <div class="timeline-title">MAS OHP</div>
-          <div class="timeline-sub">Analyze, design, and develop a Web API consumed by Mobile Apps, for an event organizer company named PT. One Hundred Percent Production. (Bandung)</div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">2017</div>
-          <div class="timeline-title">SIAPIK Xamarin</div>
-          <div class="timeline-sub">Analyze, design, and develop an Android/iOS mobile application for Bank Indonesia that helps small-medium businesses in Indonesia to record their business transaction. (Jakarta)</div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">2016</div>
-          <div class="timeline-title">Document Online</div>
-          <div class="timeline-sub">Analyze, design, and develop a document management application for a private lawyer company. (Cirebon)</div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">2016</div>
-          <div class="timeline-title">ECIF – Electronic Customer Identification Files</div>
-          <div class="timeline-sub">Develop a web application to maintain customer identification files, create and execute ETL process using SSIS for Danamon Bank. (Jakarta)</div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">2013 – 2017</div>
-          <div class="timeline-title">Distribution Management System (DMS)</div>
-          <div class="timeline-sub">Analyze, design, develop, and implement a DMS Application that manages inventories, purchasing, sales, and accounting for PT. Buana Inovasi Teknologi. (Bogor)</div>
-        </li>
-      </ul>
-    </div>
-  </section>
+    <!-- Certifications -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num" data-speed="0.12" aria-hidden="true">04</span>
+          <p class="eyebrow">Certifications</p>
+          <h2 class="section-title">Always learning</h2>
+        </div>
+        <div class="cert-grid">
+          <a class="cert card reveal" href="https://courses.code-maze.com/tutor-certificate?cert_hash=4c623e4786ec9870" target="_blank" rel="noopener">
+            <span class="cert-issuer">Code Maze</span>
+            <h3>Microservices in .NET</h3>
+            <span class="cert-date">Dec 2024</span>
+          </a>
+          <a class="cert card reveal" href="https://www.coursera.org/account/accomplishments/specialization/43ZFQZ2WVODU" target="_blank" rel="noopener">
+            <span class="cert-issuer">IBM</span>
+            <h3>Generative AI for Software Developers Specialization</h3>
+            <span class="cert-date">Sep 2024</span>
+          </a>
+          <a class="cert card reveal" href="https://www.credly.com/badges/6ac0d0d0-baa1-4755-b579-ed54ac14e16d/public_url" target="_blank" rel="noopener">
+            <span class="cert-issuer">Google</span>
+            <h3>Google AI Essentials</h3>
+            <span class="cert-date">Sep 2024</span>
+          </a>
+          <a class="cert card reveal" href="https://www.freecodecamp.org/certification/fcc44e2bfdf-3956-41ff-b774-78187758cd0d/foundational-c-sharp-with-microsoft" target="_blank" rel="noopener">
+            <span class="cert-issuer">Microsoft</span>
+            <h3>Foundational C# with Microsoft</h3>
+            <span class="cert-date">Sep 2023</span>
+          </a>
+          <a class="cert card reveal" href="https://www.coursera.org/account/accomplishments/specialization/certificate/MR4MR8C7ST5Q" target="_blank" rel="noopener">
+            <span class="cert-issuer">Meta</span>
+            <h3>Meta Front-End Developer Specialization</h3>
+            <span class="cert-date">Sep 2023</span>
+          </a>
+          <a class="cert card reveal" href="https://www.credly.com/badges/d6ea7696-6357-4855-ae43-12060cae3498" target="_blank" rel="noopener">
+            <span class="cert-issuer">Microsoft</span>
+            <h3>Microsoft Certified – Azure Fundamentals</h3>
+            <span class="cert-date">Aug 2022</span>
+          </a>
+          <a class="cert card reveal" href="https://www.credly.com/badges/3e37ad19-6185-4692-b198-3306534fc8c8" target="_blank" rel="noopener">
+            <span class="cert-issuer">Python Institute</span>
+            <h3>PCAP – Certified Associate in Python Programming</h3>
+            <span class="cert-date">Sep 2021</span>
+          </a>
+          <a class="cert card reveal" href="https://coursera.org/verify/professional-cert/LTA2C7KKJWP9" target="_blank" rel="noopener">
+            <span class="cert-issuer">Google</span>
+            <h3>Google Data Analytics</h3>
+            <span class="cert-date">Jul 2021</span>
+          </a>
+          <a class="cert card reveal" href="https://www.credly.com/badges/fe71f9d2-e9fb-4187-8905-a680a54fb3e3" target="_blank" rel="noopener">
+            <span class="cert-issuer">Microsoft</span>
+            <h3>Programming in C#</h3>
+            <span class="cert-date">May 2019</span>
+          </a>
+          <div class="cert card reveal">
+            <span class="cert-issuer">Indonesia .NET Developer Community</span>
+            <h3>C# Fundamental</h3>
+            <span class="cert-date">May 2010</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Quote -->
-  <div class="quote-section">
-    <blockquote>The best error message is the one that never shows up.</blockquote>
-  </div>
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num" data-speed="0.12" aria-hidden="true">05</span>
+          <p class="eyebrow">Projects</p>
+          <h2 class="section-title">Selected work</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project card reveal">
+            <div class="project-meta"><span>2023 — Now</span><span><i class="fas fa-location-dot"></i> Sydney</span></div>
+            <h3>CRM – Private Health Insurance</h3>
+            <p>Develop a Customer Relationship Management application for a private health insurance company in Australia.</p>
+          </article>
+          <article class="project card reveal">
+            <div class="project-meta"><span>2022 — 2023</span><span><i class="fas fa-location-dot"></i> Sydney</span></div>
+            <h3>Evercare</h3>
+            <p>Develop an integrated healthcare application used by healthcare providers in Australia.</p>
+          </article>
+          <article class="project card reveal">
+            <div class="project-meta"><span>2019 — 2022</span><span><i class="fas fa-location-dot"></i> Karawang</span></div>
+            <h3>SHIVA – Fujita</h3>
+            <p>Analyse, design, develop and implement a web application for PT. Fujita Indonesia, a motorcycle parts manufacturer, to manage the supply chain, calculate labour and equipment effectiveness, find abnormalities in production activities, and analyse sales and financial transactions.</p>
+          </article>
+          <article class="project card reveal">
+            <div class="project-meta"><span>2021</span><span><i class="fas fa-location-dot"></i> Karawang</span></div>
+            <h3>Vendor Portal Application</h3>
+            <p>Analyse, design and develop a web application to manage purchase orders and delivery processes, used by the suppliers of PT. Fujita Indonesia.</p>
+          </article>
+          <article class="project card reveal">
+            <div class="project-meta"><span>2021</span><span><i class="fas fa-location-dot"></i> Singapore</span></div>
+            <h3>Epitome</h3>
+            <p>Create SQL and Python scripts for data cleansing and analysis; prepare and process ETL data using SSIS; and use the results as a data source for Power BI dashboards for Epitome Analytics Pte. Ltd.</p>
+          </article>
+          <article class="project card reveal">
+            <div class="project-meta"><span>2020</span><span><i class="fas fa-location-dot"></i> Jakarta</span></div>
+            <h3>UNICA – Your Clinic Application</h3>
+            <p>Analyse, design and develop web and desktop applications to manage medical health records, inventories, sales and financial transactions for an aesthetic clinic named Youth and Beauty.</p>
+          </article>
+          <article class="project card reveal">
+            <div class="project-meta"><span>2019 — 2020</span><span><i class="fas fa-location-dot"></i> Karawang</span></div>
+            <h3>Import Tracking Inventory</h3>
+            <p>Analyse, design and develop a web application for Hino Motor Manufacturing that manages the import and export of goods, integrated with Customs (Bea Cukai).</p>
+          </article>
+          <article class="project card reveal">
+            <div class="project-meta"><span>2019</span><span><i class="fas fa-location-dot"></i> Jakarta</span></div>
+            <h3>SIAPIK Web</h3>
+            <p>Analyse, design and develop a web application for Bank Indonesia that helps small and medium businesses in Indonesia record their business transactions.</p>
+          </article>
+          <article class="project card reveal">
+            <div class="project-meta"><span>2018 — 2019</span><span><i class="fas fa-location-dot"></i> Jakarta</span></div>
+            <h3>Performance Management System – Hyto</h3>
+            <p>Analyse, design and develop a performance management system for the Human Resources department of PT. Berlian Sistem Informasi.</p>
+          </article>
+          <article class="project card reveal">
+            <div class="project-meta"><span>2017 — 2018</span><span><i class="fas fa-location-dot"></i> Bandung</span></div>
+            <h3>MAS OHP</h3>
+            <p>Analyse, design and develop a Web API consumed by mobile apps for an event organiser named PT. One Hundred Percent Production.</p>
+          </article>
+          <article class="project card reveal">
+            <div class="project-meta"><span>2017</span><span><i class="fas fa-location-dot"></i> Jakarta</span></div>
+            <h3>SIAPIK Xamarin</h3>
+            <p>Analyse, design and develop an Android/iOS mobile application for Bank Indonesia that helps small and medium businesses in Indonesia record their business transactions.</p>
+          </article>
+          <article class="project card reveal">
+            <div class="project-meta"><span>2016</span><span><i class="fas fa-location-dot"></i> Cirebon</span></div>
+            <h3>Document Online</h3>
+            <p>Analyse, design and develop a document management application for a private law firm.</p>
+          </article>
+          <article class="project card reveal">
+            <div class="project-meta"><span>2016</span><span><i class="fas fa-location-dot"></i> Jakarta</span></div>
+            <h3>ECIF – Electronic Customer Identification Files</h3>
+            <p>Develop a web application to maintain customer identification files, and create and execute ETL processes using SSIS for Danamon Bank.</p>
+          </article>
+          <article class="project card reveal">
+            <div class="project-meta"><span>2013 — 2017</span><span><i class="fas fa-location-dot"></i> Bogor</span></div>
+            <h3>Distribution Management System (DMS)</h3>
+            <p>Analyse, design, develop and implement a DMS application that manages inventories, purchasing, sales and accounting for PT. Buana Inovasi Teknologi.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
+    <!-- Quote -->
+    <section class="quote" aria-label="Quote">
+      <div class="quote-glow" data-speed="0.3" aria-hidden="true"></div>
+      <blockquote data-speed="-0.08">
+        <span class="quote-mark" aria-hidden="true">“</span>
+        The best error message is the one that never shows up.
+      </blockquote>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta">
+      <div class="container cta-inner reveal">
+        <h2 class="section-title">Have a project in mind?</h2>
+        <p class="muted">Let's talk about how I can help your team build it right.</p>
+        <a class="btn btn-primary" href="mailto:juldhais@gmail.com">juldhais@gmail.com <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
     <div class="footer-inner">
-      <p>Juldhais Hengkyawan &copy; 2025</p>
+      <p>© <span id="year">2026</span> Juldhais Hengkyawan</p>
       <ul class="footer-social">
         <li><a href="mailto:juldhais@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/juldhais" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
-        <li><a href="https://github.com/juldhais" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/juldhais" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/juldhais" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
       </ul>
     </div>
   </footer>
